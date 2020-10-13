@@ -1,0 +1,25 @@
+$black: black;
+@font-face {
+    font-family: "Metropolis-Bold";
+    src: url("../fonts/Metropolis-Bold.otf");
+}
+
+@font-face {
+    font-family: "Metropolis-Medium";
+    src: url("../fonts/Metropolis-Medium.otf");
+}
+
+p {
+    color: gray;
+    font-family: "Metropolis-Medium";
+}
+
+a,
+section {
+    color: white;
+    font-family: Metropolis-Bold;
+}
+
+body {
+    background-color: $black;
+}

@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Metropolis-Bold";
+  src: url(fonts/c5e04fafcff6fc79cd76e3fe6666259c.otf);
+}
+@font-face {
+  font-family: "Metropolis-Medium";
+  src: url(fonts/cdcce86268fb4a504ff582dd54e1bbe9.otf);
+}
+p {
+  color: gray;
+  font-family: "Metropolis-Medium";
+}
+
+a,
+section {
+  color: white;
+  font-family: Metropolis-Bold;
+}
+
+body {
+  background-color: black;
+}
