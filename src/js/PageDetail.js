@@ -1,13 +1,15 @@
 const PageDetail = (argument) => {
-    const cleanedArgument = argument.replace(/\s+/g, "-");
+
     const preparePage = () => {
+        const cleanedArgument = argument.replace(/\s+/g, "-");
+
         const fetchGame = (url, argument) => {
             let finalURL = url + argument;
 
             fetch(`${finalURL}`)
                 .then((response) => response.json())
                 .then((response) => {
-                    let { name, released, description } = response;
+                    let { name, released, description, background_image, clip, rating, ratings_count } = response;
 
                     let articleDOM = document.querySelector(".page-detail .article");
 

@@ -1,9 +1,7 @@
+import 'bootstrap';
 import "../sass/styles.scss";
 import moment from "moment";
 import { routes } from "./routes";
-import { Home } from "./Home";
-import { PageList } from "./PageList"
-import { PageDetail } from "./PageDetail";
 
 console.log("Hello World");
 console.log(moment().format("MMMM Do YYYY"));
@@ -25,6 +23,13 @@ const setRoute = () => {
 window.addEventListener("hashchange", () => setRoute());
 window.addEventListener("DOMContentLoaded", () => setRoute());
 
-Home();
-PageList();
-PageDetail();
+const searchBar = document.getElementById("searchBar");
+console.log(searchBar.value);
+
+let searching = function searching() {
+    console.log(searchBar.value);
+    window.location = getElementById;
+};
+
+document.getElementById("searchButton").addEventListener("click", searching);
+console.log(searchBar);
